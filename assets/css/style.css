@@ -179,11 +179,16 @@ main { display: block; }
 }
 .hero h1 { margin-bottom: 0.15em; }
 .role {
-  margin: 0 0 1.1rem;
+  margin: 0 0 0.5rem;
   color: var(--ink-2);
   font-size: 1.08rem;
 }
 .role strong { color: var(--ink); font-weight: 600; }
+.affil {
+  margin: 0 0 1.1rem;
+  color: var(--ink-2);
+  font-size: 1.02rem;
+}
 .statement {
   font-family: var(--serif);
   font-size: 1.28rem;
@@ -260,7 +265,7 @@ main { display: block; }
   list-style: none;
   margin: 0; padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 .interest-grid li {
@@ -474,7 +479,7 @@ details.bibtex pre {
 /* ---------- Contact ---------- */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 .contact-grid h3 {
@@ -507,7 +512,7 @@ details.bibtex pre {
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .interest-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .steps li:not(:last-child)::after {
     top: auto; bottom: -0.85rem; right: auto; left: 2rem;
