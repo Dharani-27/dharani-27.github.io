@@ -144,7 +144,7 @@ a:hover { color: var(--accent-strong); text-decoration-thickness: 2px; }
 
 /* ---------- Sections ---------- */
 main { display: block; }
-.section { padding-top: 2.75rem; padding-bottom: 0.5rem; }
+.section { padding-top: 2.25rem; padding-bottom: 0; }
 .section > h2, .section-head {
   display: flex;
   align-items: baseline;
@@ -156,7 +156,10 @@ main { display: block; }
 .section-head h2 { margin: 0; border: 0; padding: 0; }
 .section-head a { margin-left: auto; font-size: 0.98rem; font-weight: 500; font-family: var(--sans); }
 
-.page-intro { padding-top: 3rem; padding-bottom: 0.5rem; }
+.page-intro { padding-top: 2.5rem; padding-bottom: 0; }
+.page-intro + .section { padding-top: 1rem; }
+.page-intro .note { margin-bottom: 0; }
+.pub-list > .pub:last-child, .entries > .entry:last-child { margin-bottom: 0; }
 .page-intro .lead { max-width: 46rem; }
 
 .lead { font-size: 1.15rem; color: var(--ink-2); }
@@ -265,7 +268,7 @@ main { display: block; }
   list-style: none;
   margin: 0; padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 .interest-grid li {
@@ -554,3 +557,4 @@ details.bibtex pre {
   a { color: #000; }
 }
 .focus .focus-title { font-size: 1.4rem; }
+.pub-list + .note { margin-top: 0.75rem; }
