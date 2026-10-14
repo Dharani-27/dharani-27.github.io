@@ -263,23 +263,35 @@ main { display: block; }
 .glance .where { display: block; color: var(--ink-2); font-size: 0.95rem; }
 .glance p { margin: 0; line-height: 1.45; }
 
-/* ---------- Interests ---------- */
-.interest-grid {
+/* ---------- Interests (inside About) ---------- */
+.about-grid h3.label {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.5rem 0 0.6rem;
+}
+.interest-list {
   list-style: none;
   margin: 0; padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  max-width: 40rem;
 }
-.interest-grid li {
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: 1.15rem 1.25rem;
-  border-top: 3px solid var(--accent);
+.interest-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
 }
-.interest-grid h3 { margin-bottom: 0.3rem; }
-.interest-grid p { margin: 0; color: var(--ink-2); }
+.interest-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.7em;
+  width: 0.4rem; height: 0.4rem;
+  border-radius: 2px;
+  background: var(--accent);
+}
+.interest-list strong { color: var(--ink); }
 
 /* ---------- News ---------- */
 .news { list-style: none; margin: 0; padding: 0; }
@@ -515,7 +527,6 @@ details.bibtex pre {
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
-  .interest-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .steps li:not(:last-child)::after {
     top: auto; bottom: -0.85rem; right: auto; left: 2rem;
@@ -533,7 +544,7 @@ details.bibtex pre {
   }
   .portrait { width: 168px; height: 168px; }
   .statement { font-size: 1.15rem; }
-  .interest-grid, .work-grid { grid-template-columns: 1fr; }
+  .work-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .news li { grid-template-columns: 1fr; gap: 0.1rem; }
   .entry { grid-template-columns: 1fr; }
@@ -553,7 +564,7 @@ details.bibtex pre {
 @media print {
   .site-header, .skip-link, .site-footer { display: none; }
   body { background: #fff; }
-  .pub, .card, .entry, .interest-grid li, .focus { border-color: #ccc; box-shadow: none; }
+  .pub, .card, .entry, .focus { border-color: #ccc; box-shadow: none; }
   a { color: #000; }
 }
 .focus .focus-title { font-size: 1.4rem; }
