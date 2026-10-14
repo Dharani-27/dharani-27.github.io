@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css?v=5">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
 
   <script type="application/ld+json">
   {
@@ -98,18 +98,28 @@
       </div>
     </section>
 
-    <!-- Short professional bio, research interests, and education -->
-    <section class="container section about-grid" aria-labelledby="about">
+    <!-- Short professional bio and research interests, with education alongside -->
+    <div class="container section about-grid">
       <div>
-        <h2 id="about" class="section-head">About me</h2>
-        <p>I am a Ph.D. student in Computer Science at UMBC. My research focuses on the <strong>Consistency of large language models (LLMs)</strong>, with an emphasis on multi-agent LLM systems, where several agents coordinate, debate, or delegate tasks and the system's final output depends on how they interact. <a href="research.html">Read more about my research</a>.</p>
-        <p>Alongside research, I serve as a Graduate Teaching Assistant and as Student Affairs Senator in UMBC's Graduate Student Association.</p>
+        <section aria-labelledby="about">
+          <h2 id="about" class="section-head">About me</h2>
+          <p>I am a Ph.D. student in Computer Science at UMBC. My research focuses on the <strong>Consistency of large language models (LLMs)</strong>, with an emphasis on multi-agent LLM systems, where several agents coordinate, debate, or delegate tasks and the system's final output depends on how they interact. <a href="research.html">Read more about my research</a>.</p>
+          <p>Alongside research, I serve as a Graduate Teaching Assistant and as Student Affairs Senator in UMBC's Graduate Student Association.</p>
+        </section>
 
-        <h3 class="label" id="interests">Research interests</h3>
-        <ul class="interest-list">
-          <li><strong>Consistency in LLMs:</strong> when and why LLMs produce inconsistent outputs for semantically equivalent inputs, and how to measure it. Related interest: knowledge-infused learning.</li>
-          <li><strong>Multi-agent LLM systems:</strong> how inconsistency arises across interacting agents and carries through to the system's final output.</li>
-        </ul>
+        <section class="interests" aria-labelledby="interests">
+          <h2 id="interests" class="section-head">Research interests</h2>
+          <ul class="interest-list">
+            <li>
+              <h3>Consistency in LLMs</h3>
+              <p>When and why LLMs produce inconsistent outputs for semantically equivalent inputs, and how to measure it. Related interest: knowledge-infused learning.</p>
+            </li>
+            <li>
+              <h3>Multi-agent LLM systems</h3>
+              <p>How inconsistency arises across interacting agents and carries through to the system's final output.</p>
+            </li>
+          </ul>
+        </section>
       </div>
       <aside class="card glance" aria-label="Education">
         <h3>Education</h3>
@@ -121,7 +131,7 @@
         <h3>Location</h3>
         <p>Baltimore, Maryland, USA</p>
       </aside>
-    </section>
+    </div>
 
     <!-- News -->
     <section class="container section" aria-labelledby="news">

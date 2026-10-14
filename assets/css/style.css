@@ -263,35 +263,21 @@ main { display: block; }
 .glance .where { display: block; color: var(--ink-2); font-size: 0.95rem; }
 .glance p { margin: 0; line-height: 1.45; }
 
-/* ---------- Interests (inside About) ---------- */
-.about-grid h3.label {
-  font-family: var(--sans);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 1.5rem 0 0.6rem;
-}
+/* ---------- Research interests (own section, beside Education) ---------- */
+.interests { margin-top: 2rem; }
 .interest-list {
   list-style: none;
   margin: 0; padding: 0;
   max-width: 40rem;
 }
 .interest-list li {
-  position: relative;
-  padding-left: 1.1rem;
-  margin-bottom: 0.55rem;
+  border-left: 3px solid var(--accent);
+  padding: 0.15rem 0 0.15rem 1rem;
+  margin-bottom: 1.1rem;
 }
-.interest-list li::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0.7em;
-  width: 0.4rem; height: 0.4rem;
-  border-radius: 2px;
-  background: var(--accent);
-}
-.interest-list strong { color: var(--ink); }
+.interest-list li:last-child { margin-bottom: 0; }
+.interest-list h3 { font-size: 1.12rem; margin: 0 0 0.2rem; }
+.interest-list p { margin: 0; color: var(--ink-2); }
 
 /* ---------- News ---------- */
 .news { list-style: none; margin: 0; padding: 0; }
