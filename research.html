@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Dharani Nadendla</title>
+  <meta name="description" content="Dharani Nadendla's research on consistency in multi-agent LLM systems: defining consistency, diagnosing its root causes, and measuring it with metrics and benchmarks.">
+  <meta name="author" content="Dharani Nadendla">
+  <link rel="canonical" href="https://dharani-27.github.io/research.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Dharani Nadendla">
+  <meta property="og:description" content="Consistency and reliability in multi-agent LLM systems.">
+  <meta property="og:url" content="https://dharani-27.github.io/research.html">
+  <meta property="og:image" content="https://dharani-27.github.io/assets/img/dharani-nadendla-share.jpg">
+  <meta property="og:image:alt" content="Portrait of Dharani Nadendla">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="index.html">Dharani Nadendla</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching &amp; Service</a></li>
+          <li><a href="files/Dharani_Nadendla_CV.pdf">CV<span class="visually-hidden"> (PDF)</span></a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container page-intro">
+      <h1>Research</h1>
+      <p class="lead">My research is about <strong>trust</strong>: building AI systems whose behavior people can rely on. Right now, that means studying <strong>consistency in multi-agent large language model (LLM) systems</strong>. I do this work in the <a href="https://kai2.umbc.edu/">KAI² Lab</a> at UMBC with my advisor, <a href="https://manasgaur.github.io/">Dr. Manas Gaur</a>.</p>
+    </div>
+
+    <!-- Current focus -->
+    <section class="container section" aria-labelledby="current">
+      <h2 id="current" class="section-head">Current focus</h2>
+      <article class="focus" aria-labelledby="mac-title">
+        <span class="tag kicker">Ongoing Ph.D. research</span>
+        <h3 id="mac-title" class="focus-title">Consistency in multi-agent LLM systems</h3>
+        <p>LLMs are no longer used only as single chatbots. They increasingly work as <em>systems</em> of agents that plan, debate, check each other, and hand off tasks. We already know that a single model can give different answers to the same question. Much less is known about what happens when several agents interact. An inconsistency in one agent can spread to the others, and the system's final answer can change for reasons that are hard to trace.</p>
+        <p>My research breaks this problem into three steps:</p>
+
+        <ol class="steps">
+          <li>
+            <span class="num" aria-hidden="true">1</span>
+            <h3>Define</h3>
+            <p class="q">What does &ldquo;consistent&rdquo; mean for a multi-agent system?</p>
+            <p>Consistency is usually defined for one model and one prompt. I'm working on a definition that fits settings where many agents interact.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">2</span>
+            <h3>Diagnose</h3>
+            <p class="q">Where does inconsistency come from?</p>
+            <p>I'm tracing inconsistent behavior back to its root causes, so that it can be understood and fixed rather than just observed.</p>
+          </li>
+          <li>
+            <span class="num" aria-hidden="true">3</span>
+            <h3>Measure</h3>
+            <p class="q">How do we evaluate it?</p>
+            <p>I'm working toward metrics and benchmarks that measure consistency in multi-agent settings, so different systems can be compared.</p>
+          </li>
+        </ol>
+        <p class="note">Results from this project will be posted on my <a href="publications.html">publications page</a> as they appear.</p>
+      </article>
+    </section>
+
+    <!-- Earlier work -->
+    <section class="container section" aria-labelledby="earlier">
+      <h2 id="earlier" class="section-head">Earlier work</h2>
+      <p>Before focusing on LLMs, I worked on security problems where trust between people and technology is at stake.</p>
+      <div class="work-grid">
+        <article class="card" aria-labelledby="acoustic">
+          <h3 id="acoustic">Securing human&ndash;AI interaction with ultrasound</h3>
+          <p>As AI agents become able to act and speak for people, it matters whether a real person is present and whether a voice can be trusted. This work uses inaudible ultrasound signals on everyday devices to address both questions.</p>
+          <ul>
+            <li><a href="publications.html#echoguard">EchoGuard</a>: continuous ultrasound-based verification that a human, not an AI agent, is present (EdgeSP 2026, co-first author).</li>
+            <li><a href="publications.html#ultrasound-watermark">Ultrasound Watermark</a>: real-time acoustic watermarking against voice scams on smartphones (EdgeSP 2026).</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="malware">
+          <h3 id="malware">Understanding malware evolution</h3>
+          <p>MASCOT is a manually reviewed dataset of 6,032 malware source-code samples. It is used to study malware from a software-engineering perspective and to trace how code reuse drives malware lineages.</p>
+          <ul>
+            <li><a href="publications.html#mascot">MASCOT</a> (arXiv preprint, 2025).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Toolbox -->
+    <section class="container section" aria-labelledby="toolbox">
+      <h2 id="toolbox" class="section-head">Methods &amp; tools</h2>
+      <dl class="toolbox">
+        <dt>Methods</dt>
+        <dd>Machine learning, signal processing, wireless and acoustic sensing, adversarial methods, malware analysis</dd>
+        <dt>Programming</dt>
+        <dd>Python, MATLAB, Kotlin, Java, Haskell, Linux, LaTeX</dd>
+        <dt>Tools</dt>
+        <dd>Android Studio, Adobe Audition</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Dharani Nadendla</strong> &middot; Ph.D. Student in Computer Science, University of Maryland, Baltimore County</p>
+      <ul class="footer-links" aria-label="Footer links">
+        <li><a href="mailto:dharann1@umbc.edu">dharann1@umbc.edu</a></li>
+        <li><a href="files/Dharani_Nadendla_CV.pdf">CV (PDF)</a></li>
+        <li><a href="https://scholar.google.com/citations?user=Z6vt7Y0AAAAJ">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0009-0002-4283-8955">ORCID</a></li>
+        <li><a href="https://github.com/dharani-27">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/dharani-nadendla/">LinkedIn</a></li>
+      </ul>
+      <p class="updated">Last updated October 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
